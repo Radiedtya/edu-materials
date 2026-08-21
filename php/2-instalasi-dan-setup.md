@@ -1,5 +1,6 @@
 # Instalasi dan Setup
-Menyiapkan lingkungan pengembangan PHP di komputermu dan menjalankan file .php pertama.
+
+Menyiapkan lingkungan pengembangan PHP di komputermu, mulai dari menginstal tools yang diperlukan, melakukan konfigurasi dasar, hingga memastikan PHP dapat berjalan dengan baik. Pada bagian ini, kamu juga akan mencoba membuat dan menjalankan file `.php` pertamamu untuk memastikan seluruh environment sudah siap digunakan.
 
 ---
 
@@ -13,8 +14,10 @@ Untuk menjalankan PHP secara lokal di komputer, kamu membutuhkan tiga komponen u
 | **Web Server** | Meneruskan permintaan (*request*) dari browser ke PHP Engine. | Apache, Nginx |
 | **Database** | Menyimpan dan mengolah data aplikasi secara terstruktur. | MySQL, MariaDB |
 
-> 💡 **Tips Praktis:**  
+> [!TIP]
 > Daripada memasang dan mengonfigurasi ketiga komponen di atas satu per satu secara manual, kita bisa menggunakan *software all-in-one* (seperti **Laragon** atau **XAMPP**) yang sudah memaketkan semuanya dalam satu *installer*.
+
+<br><br>
 
 > ### 1.1 Pilihan Software Local Server
 
@@ -24,7 +27,8 @@ Untuk menjalankan PHP secara lokal di komputer, kamu membutuhkan tiga komponen u
 | **Laragon** | Windows | Sangat ringan, fleksibel, cepat, serta mendukung fitur URL otomatis (`.test`). | Pemula – Menengah |
 | **MAMP** | macOS, Windows | Antarmuka intuitif yang dirancang khusus dan dioptimalkan untuk ekosistem Mac. | Pengguna macOS |
 
-> 📌 **Catatan Panduan:**  
+> [!NOTE]
+> **Catatan Panduan:**  
 > Dalam panduan ini, kita akan menggunakan **XAMPP** sebagai contoh utama karena paling umum digunakan dan tutorial pendukungnya sangat mudah ditemukan. Namun, jika kamu menggunakan OS Windows dan menginginkan performa yang lebih ringan dan praktis, **Laragon** sangat direkomendasikan.
 
 ---
@@ -87,7 +91,8 @@ Jika kedua *module* berwarna **hijau**, berarti semuanya berjalan dengan baik.
 2. Klik **Start** pada **Apache Web Server**
 3. Klik **Start** pada **MySQL Database**
 
-> 💡 Di macOS, mungkin akan muncul prompt izin *firewall*. Klik **Allow** untuk mengizinkan koneksi.
+>[!NOTE]
+Di macOS, mungkin akan muncul prompt izin *firewall*. Klik **Allow** untuk mengizinkan koneksi.
 
 ---
 
@@ -111,8 +116,10 @@ Jika kamu ingin sesuatu yang lebih ringan dan modern dibanding **XAMPP**
 
 ![Laragon](/php/images/contoh-laragon.png)
 ini adalah hasil ketika sudah di klik **Start All**
-> 💡 Keunggulan **Laragon**: otomatis membuat *virtual host* untuk setiap folder proyek, jadi kamu bisa akses `http://namaprojek.test` tanpa konfigurasi manual dengan menyalakan server **Nginx**.
+> [!TIP]
+>  Keunggulan **Laragon**: otomatis membuat *virtual host* untuk setiap folder proyek, jadi kamu bisa akses `http://namaproyek.test` tanpa konfigurasi manual dengan menyalakan server **Nginx**.
 
+>[!NOTE]
 **Catatan:** *untuk **Nginx** dan lain sebagainya bisa di aktifkan lewat pengaturan pada pojok kanan atas*
 
 ---
@@ -142,7 +149,8 @@ Copyright (c) The PHP Group
 Built by The PHP Group
 Zend Engine v4.4.24, Copyright (c) Zend Technologies
 ```
-> ⚠️ Jika muncul pesan "php is not recognized", berarti PHP belum ditambahkan ke PATH environment variable. Pada **XAMPP**, kamu perlu menambahkan path C:\xampp\php ke sistem. Pada **Laragon**, biasanya sudah otomatis.
+> [!WARNING]
+> Jika muncul pesan "php is not recognized", berarti PHP belum ditambahkan ke PATH environment variable. Pada **XAMPP**, kamu perlu menambahkan path C:\xampp\php ke sistem. Pada **Laragon**, biasanya sudah otomatis.
 
 Perintah lain yang berguna:
 ```bash
@@ -199,7 +207,7 @@ http://belajar-php.test/halaman.php     → otomatis jadi virtual host
 
 ---
 
-> ## 7. Membuat File PHP Pertama
+## 7. Membuat File PHP Pertama
 Sekarang kita buat file PHP sederhana untuk memastikan semuanya berjalan lancar.
 
 > ### 7.1 Langkah 1 (Buat File)
@@ -244,7 +252,8 @@ Menggunakan Notepad bisa saja, tapi untuk produktivitas yang lebih baik, gunakan
 | **Sublime Text** | Ya | Sangat ringan dan cepat, namun membutuhkan plugin tambahan untuk fitur lanjutan. |
 | **Notepad++** | Ya | Ringan dan simpel, sangat cocok untuk komputer atau laptop spesifikasi rendah. |
 
-> 🎯 **Rekomendasi:** Gunakan **VS Code + ekstensi PHP Intelephense** untuk pengalaman *coding* terbaik secara gratis.
+> [!TIP]
+**Rekomendasi:** Gunakan **VS Code + ekstensi PHP Intelephense** untuk pengalaman *coding* terbaik secara gratis.
 
 ## 9. Tips Penting
 
